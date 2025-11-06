@@ -1,0 +1,108 @@
+### UNITY + VISUAL STUDIO CLEAN .GITIGNORE ###
+
+# === Unity Core ===
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+sysinfo.txt
+
+# Addressables / StreamingAssets cache
+[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+[Aa]ssets/[Ss]treamingAssets/aa.meta
+[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# === IDE / Editor ===
+.vs/
+.idea/
+*.DotSettings.user
+*.suo
+*.user
+*.userprefs
+*.rsuser
+
+# === Keep project/solution files (important for autocompletion!) ===
+# DO NOT IGNORE THESE:
+# *.csproj
+# *.sln
+
+# === Builds ===
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.dll
+*.pdb
+*.mdb
+
+# === Platform specific ===
+# Windows
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+
+# === Visual Studio ===
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.obj
+*.pch
+*.pdb
+*.idb
+*.ipch
+*.aps
+*.ncb
+*.opendb
+*.VC.db
+
+# Test / Coverage / Temp files
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.coverage
+*.coveragexml
+*.nunit.xml
+
+# === Package Manager / Dependencies ===
+node_modules/
+packages/
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+
+# === JetBrains Rider ===
+.idea/
+.idea_modules/
+out/
+*.sln.iml
+
+# === VS Code ===
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# === Misc ===
+*.log
+*.tmp
+*.bak
+*.old
+*.stackdump
+*.pidb
+*.svd
+*.opendb
+*.mdb
+*.dbmdl
+*.dbproj.schemaview
+*.localhistory/
