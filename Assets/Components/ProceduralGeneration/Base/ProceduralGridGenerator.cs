@@ -15,6 +15,7 @@ namespace Components.ProceduralGeneration
 
         public int StepDelay => _stepDelay;
         
+        public int GetSeed() {  return _seed; }
         public override void GenerateGrid()
         {
             // Generate grid base data.

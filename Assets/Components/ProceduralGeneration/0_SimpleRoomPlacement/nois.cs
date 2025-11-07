@@ -39,7 +39,7 @@ public class NoiseGenerator : ProceduralGenerationMethod
     {
         cancellationToken.ThrowIfCancellationRequested();
 
-        FastNoiseLite noise = new FastNoiseLite();
+        FastNoiseLite noise = new FastNoiseLite(GridGenerator.GetSeed());
         noise.SetNoiseType(noiseType);
         noise.SetFrequency(frequency);
         noise.SetDomainWarpAmp(amplitude);
