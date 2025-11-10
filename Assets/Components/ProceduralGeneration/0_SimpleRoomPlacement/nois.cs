@@ -47,6 +47,7 @@ public class NoiseGenerator : ProceduralGenerationMethod
         noise.SetFractalType(fractalType);
         noise.SetFractalOctaves(octaves);
         noise.SetFractalLacunarity(lacunarity);
+        noise.SetFractalGain(persistence);
 
         for (int x = 0; x < Grid.Width; x++)
         {

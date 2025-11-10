@@ -15,15 +15,15 @@ MonoBehaviour:
   _maxSteps: 10
   maxSteps: 200
   noiseType: 0
-  frequency: 0.04
-  amplitude: 0.981
-  fractalType: 0
-  octaves: 2
-  lacunarity: 1.2
-  persistence: 0.5
-  waterHeight: -0.61
-  sandHeight: -0.48
-  grassHeight: 0.6
+  frequency: 0.03
+  amplitude: 0
+  fractalType: 2
+  octaves: 4
+  lacunarity: 3.31
+  persistence: 0.35
+  waterHeight: -1
+  sandHeight: -0.3
+  grassHeight: 0.3
   rockHeight: 1
   drawDebugTexture: 0
   debugTextureAlpha: 1

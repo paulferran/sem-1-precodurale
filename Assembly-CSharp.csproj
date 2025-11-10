@@ -80,6 +80,7 @@
     <Compile Include="Assets\VTools\RandomService\RandomService.cs" />
     <Compile Include="Assets\VTools\Grid\Scripts\Data\Grid.cs" />
     <Compile Include="Assets\VTools\Grid\Scripts\Data\Cell.cs" />
+    <Compile Include="Assets\Components\ProceduralGeneration\0_SimpleRoomPlacement\caves.cs" />
     <Compile Include="Assets\VTools\Grid\Scripts\Data\GridObject.cs" />
   </ItemGroup>
   <ItemGroup>
