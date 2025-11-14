@@ -16,7 +16,7 @@
 Gen-Proc-Week-1 est un repo contenant le nécessaire de base afin de  customiser des générations procédurales de base.
 
 ## Getting Started
-Pour démarrer il faudra mettre un ```ProceduralGridGenerator``` dans la scène.  
+Pour démarrer il faudra mettre un objet avec un ```ProceduralGridGenerator``` dans la scène.  
 <img src="Documentation/img1.png?raw=true"/>  
 Ensuite, il vous faudra créer un nouveau script dérivant de la classe ```ProceduralGenerationMethod```.  
 Faites votre génération procédurale dans ce dernier et créez un asset de ce script.  
@@ -31,7 +31,7 @@ protected override async UniTask ApplyGeneration(CancellationToken cancellationT
 
     // Logique du code
 
-    // Waiting between steps to see the result.
+    // Waiting between each steps to see the result progress .
     await UniTask.Delay(GridGenerator.StepDelay, cancellationToken: cancellationToken);
 }
 ```
