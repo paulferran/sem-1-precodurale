@@ -39,6 +39,7 @@ protected override async UniTask ApplyGeneration(CancellationToken cancellationT
 ```
 Enfin, références cet asset dans votre ProceduralGridGenerator et vous aurez fini l'installation.
 votre scene devrait ressembler a ceci :
+
 <img src="Doc/img1.png?raw=true"/>  
 
 ## Simple Room Placement
@@ -53,6 +54,7 @@ ce script a le meme objectif que celui d'avant mais en utilisant des nodes pour 
 Il découpe la map jusqu'à atteindre le nombre de nodes enfants demandé. 
 Une fois le nombre de nodes enfants atteint il va s'arrêter et instancier des salles à ces positions.
 Ensuite il va générer des couloirs pour relier les salles.
+
 <img src="Doc/img4.png?raw=true"/>
 
 ## Cellular Automata
@@ -60,9 +62,13 @@ Le cellular automata permet de generer du terrain.
 Pour cela on genere du noise et on itere sur toutes les tiles une logique pour soit rester de la terre soit de l'eau.
 pour cela on check les 8 tiles autours de celle verifier et en fonction des parametres de depart elle changera en fonction du nombre de cell de terre (je recomande 4 ou 5 et 10 iteration ou "step" pour une generation correcte).
 Warning !! il ne faut modifier l'etat des tiles seulement apres avoir fait tous les changement pour cela il faut stocker cela dans une liste en locurence dans le code de bool.
+
 <img src="Doc/img5.png?raw=true"/> 
 
 ## Noise Generator  
 De nouveau une génération de terrain mais bien plus précise. On passera par la librairie FastNoiseLite afin de générer notre bruit. On le créé, lui assigne plusieurs paramètres et la librairie fait le reste il ne nous reste qu'à instancier nos tiles en fonction du résultat.
-dans ce code fait on fait varier la hauteur du monde et on le fait 2 fois pour avoir un aspect de grotte.
+un variant de ce code permet de creer une cave pour ceci on fait varier la hauteur du monde grace au noise et grace a 2 layer dont un retourné cela rend un effet de gotte.
+
 <img src="Doc/img5.png?raw=true"/>  
+
+Il y a aussi un debug mod qui permet d'avoir chaque position de la cell ecrit dessus mais ce dernier consome beacoup de ressource et est donc a utiliser sur une petite map.
