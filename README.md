@@ -69,6 +69,6 @@ Warning !! il ne faut modifier l'etat des tiles seulement apres avoir fait tous 
 De nouveau une génération de terrain mais bien plus précise. On passera par la librairie FastNoiseLite afin de générer notre bruit. On le créé, lui assigne plusieurs paramètres et la librairie fait le reste il ne nous reste qu'à instancier nos tiles en fonction du résultat.
 un variant de ce code permet de creer une cave pour ceci on fait varier la hauteur du monde grace au noise et grace a 2 layer dont un retourné cela rend un effet de gotte.
 
-<img src="Doc/img5.png?raw=true"/>  
+<img src="Doc/img6.png?raw=true"/>  
 
 Il y a aussi un debug mod qui permet d'avoir chaque position de la cell ecrit dessus mais ce dernier consome beacoup de ressource et est donc a utiliser sur une petite map.
