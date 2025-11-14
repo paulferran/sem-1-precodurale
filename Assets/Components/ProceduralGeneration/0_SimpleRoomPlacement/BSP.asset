@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxSteps: 10
   _maxDepth: 125
-  _minRoomSize: 30
-  _maxRoomSize: 71
+  _minRoomSize: 70
+  _maxRoomSize: 35
   probaOrientation: 40
